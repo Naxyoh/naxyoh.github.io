@@ -12,7 +12,7 @@ I have been wondering a while about whether I should start a blog or not.
 `Is what I know worth sharing ?`
 or even
 `Will it be interesting enough ?`
-is something that might sounds familiar to you if you ever thought about starting a blog too.
+is something that might sound familiar to you if you ever thought about starting a blog too.
 
 After a lot of thinking I finally decided to go for it.
 
