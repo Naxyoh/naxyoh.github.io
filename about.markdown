@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi !
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My name is Yoan Smit and I have been coding for the past five years.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I am currently working at [BENEXT](https://www.benextcompany.com), a tech company based in Paris, France.
 
+I started this blog to share with others what I wished I had known earlier, starting with general advices about coding to book reviews.
 
-[jekyll-organization]: https://github.com/jekyll
+You can find me on [Twitter](https://twitter.com/YoanSmit) or on [GitHub](https://github.com/naxyoh).
+
+Cheers.
