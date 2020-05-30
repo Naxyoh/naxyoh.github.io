@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: About me
+subtitle: Nice to meet you !
 permalink: /about/
 ---
 
