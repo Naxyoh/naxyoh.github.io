@@ -45,7 +45,7 @@ I won't go into the details but I really recommend doing all these things by you
 
 (How I did my own app will be covered in depth in a next article)
 
-### What if I don't any ideas for an app ?
+### What if I don't have any idea for an app ?
 
 It doesn't have to be a ground breaking app. If you really don't have a clue, ask yourself what you need, what you lack and do it yourself ! Still nothing ? Ask your friends, your family, there is always someone with a need waiting to be fulfilled.
 
