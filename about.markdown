@@ -9,12 +9,12 @@ Hi !
 
 My name is Yoan Smit and I have been coding for the past five years.
 
-I am currently working at [BENEXT](https://www.benextcompany.com), a tech company based in Paris, France.
+I am currently working at [BENEXT](https://www.benextcompany.com){:target="_blank"}, a tech company based in Paris, France.
 
 I started this blog to share with others what I wished I had known earlier, from general advice about coding to book reviews.
 
-You can find me on [Twitter](https://twitter.com/YoanSmit) or on [GitHub](https://github.com/naxyoh).
+You can find me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or on [GitHub](https://github.com/naxyoh){:target="_blank"}.
 
-By the way, the logo in the navigation bar was designed by Alice Tapia, check her [portfolio](https://www.alicetapia.com/) if you want to see more of her awesome work.
+By the way, the logo in the navigation bar was designed by Alice Tapia, check her [portfolio](https://www.alicetapia.com/){:target="_blank"} if you want to see more of her awesome work.
 
 Cheers.
