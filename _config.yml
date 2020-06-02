@@ -3,6 +3,9 @@
 # Name of website
 title: Coding with wolves
 
+# Title used in the navbar
+nav-title: C2W
+
 # Short description of your site
 description: You are not alone, join the pack !
 

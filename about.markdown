@@ -15,4 +15,6 @@ I started this blog to share with others what I wished I had known earlier, from
 
 You can find me on [Twitter](https://twitter.com/YoanSmit) or on [GitHub](https://github.com/naxyoh).
 
+By the way, the logo in the navigation bar was designed by Alice Tapia, check her [portfolio](https://www.alicetapia.com/) if you want to see more of her awesome work.
+
 Cheers.
