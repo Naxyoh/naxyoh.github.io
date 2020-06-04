@@ -20,7 +20,7 @@ When you start coding for a company with a more-or-less organized team these won
     </figure>
 </p>
 
-As the product grows you encounter issues we all faced : the product need is not well specified and you have to redo your development several times. The UI designer did not specified which color you should use for a given element and if you have to get up and go all the way to his desk to ask him to do his job. Trust me, the list still goes on for quite a bit.
+As the product grows you encounter issues we all faced : the product need is not well specified and you have to redo your development several times. The UI designer did not specified which color you should use for a given element and you have to get up and go all the way to his desk to ask him to do his job. Trust me, the list still goes on for quite a bit.
 
 _Okay but where are you going with all this ?_
 
