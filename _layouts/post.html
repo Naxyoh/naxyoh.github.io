@@ -2,6 +2,17 @@
 layout: base
 ---
 
+{% 
+  include blogPost-structuredData.html 
+  headline=page.title
+  genre=page.category
+  keywords=page.keywords
+  content=page.content
+  link=page.permalink
+  date=page.date
+  modifiedDate=page.modifiedDate
+%}
+
 {% include header.html type="post" %}
 
 <div class="container-md">
