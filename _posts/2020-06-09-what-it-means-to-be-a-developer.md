@@ -58,7 +58,7 @@ when doing a technological watch.
 
 One of the best things I learn while working is software craftmanship. 
 
-It is hardly ever teach at school and yet I consider it a basic for any developer. Check concepts like Clean Code, Extreme Programming, some guys (Robert Martin or Kent Beck, not some random guys, trust me) already faced the issues you are facing or will face in a near future, learn from them, it will be the foundation on which you will build your technological knowledge.
+It is hardly ever teach at school and yet I consider it a basic for any developer. Check concepts like Clean Code, Extreme Programming, some guys (Robert Martin or Kent Beck, not some _random_ guys, trust me) already faced the issues you are facing or will face in a near future, learn from them, it will be the foundation on which you will build your technological knowledge.
 
 ### Find your jedi master
 
