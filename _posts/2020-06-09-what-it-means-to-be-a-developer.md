@@ -62,20 +62,16 @@ It is hardly ever teach at school and yet I consider it a basic for any develope
 
 ### Find your jedi master
 
-An easy way to improve is to find a mentor, just like copying art is a way to master it, copying a mentor, his coding style, way of thinking, is a faster way to master coding than reading some random guy's blog. 
+An easy way to improve is to find a mentor, just like copying art is a way to master it, copying a mentor, his or her coding style, way of thinking, is a faster way to master coding than reading some random guy's blog. 
 
 But this is a tricky advice because it can be a double-edged sword, it all depends on how good your mentor is.
 
-He can be master Yoda and teach you how to raise spaceships from some swamps or he can be Darth Vader and teach you nothing except that he is your father.
+He or she can be master Yoda and teach you how to raise spaceships from some swamps or he or she can be Darth Vader and teach you nothing except that he is your father.
 
 _Ok but then how do I find my master Yoda ?_
 
-Usually what I do is Google him, it is silly but if he is a ghost on the Internet you might wonder
-if he is qualified to be your mentor, it does not mean much but if instead you find that he speaks to meetups,
-has a blog or is active on Github you will be able to tell whether he is good or not by looking at what Google
-gave you. 
-
-(I assumed your mentor was a guy but he can be a she obviously, coding is not a dude thing anymore !)
+Usually what I do is Google him or her, it is silly but if he or she is a ghost on the Internet you might wonder
+if he or she is qualified to be your mentor, it does not mean much but if instead you find that he or she speaks to meetups, has a blog or is active on Github you will be able to tell whether he or she is good or not by looking at what Google gave you. 
 
 Most of the time the team I work with is the most crucial factor when choosing a project or a new job.
 
@@ -86,3 +82,5 @@ There is a lot you can do to keep improving and it does not concern junior devel
 How about you, what is your strategy ? I would love it if you shared it with me on Twitter or LinkedIn.
 
 Cheers.
+
+PS : If you are looking for some materials [Martin Fowler's blog](https://martinfowler.com){:target="_blank"} or [Robert C. Martin's blog](https://blog.cleancoder.com){:target="_blank"} (even if this one lacks user experience) are must read !
