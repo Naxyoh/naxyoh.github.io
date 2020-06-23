@@ -2,7 +2,7 @@
 layout: post
 title:  "How to slay your objectives"
 subtitle: "... and the way to master KPIs"
-date:   2020-06-11 07:41:22 +0200
+date:   2020-06-23 11:41:22 +0200
 tags: [Coding philosophy]
 ---
 
