@@ -50,7 +50,7 @@ is easy :
 
 __Be a 5 year-old child__
 
-It is not obvious to you ? Let me explain : when you are child you have this hability to question everything,
+It is not obvious to you ? Let me explain : when you are child you have this ability to question everything,
 you want to know the whys and the hows of everything around you. You want to have the same kind of mindset
 when doing a technological watch.
 
