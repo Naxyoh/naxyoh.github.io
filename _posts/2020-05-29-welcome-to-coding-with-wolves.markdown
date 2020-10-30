@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Coding with wolves!"
 date:   2020-05-29 13:30:14 +0200
-category: blog update
+category: [Blog]
 ---
 
 Hi everyone !
