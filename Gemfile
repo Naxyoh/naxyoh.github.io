@@ -2,5 +2,6 @@
 
 source "https://rubygems.org"
 
-gemspec
+gem 'jekyll'
+gem "beautiful-jekyll-theme", "~>5.0"
 
