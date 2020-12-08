@@ -1,20 +1,18 @@
 ---
 layout: page
-title: About me
-subtitle: Nice to meet you !
+title: À propos
+subtitle: Ravi de vous rencontrer !
 permalink: /about/
 ---
 
-Hi !
+Salut !
 
-My name is Yoan Smit and I have been coding for the past five years.
+Je m'appelle Yoan Smit et je code depuis plus de cinq ans maintenant.
 
-I am currently working at [BENEXT](https://www.benextcompany.com){:target="_blank"}, a tech company based in Paris, France.
+Je travaille actuellement chez [Frichti](https://www.frichti.co){:target="_blank"}, une entreprise de la foodtech situé à Paris, France.
 
-I started this blog to share with others what I wished I had known earlier, from general advice about coding to book reviews.
+Si j'ai démarré ce blog c'est avant tout pour partager avec les autres ce que j'aurai aimé savoir plus tôt, en commençant par des conseils assez généraux sur le code jusqu'à ma façon de coder en passant par des techniques pour décrocher un job dans le monde du développement.
 
-You can find me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or on [GitHub](https://github.com/naxyoh){:target="_blank"}.
-
-By the way, the logo in the navigation bar was designed by Alice Tapia, check her [portfolio](https://www.alicetapia.com/){:target="_blank"} if you want to see more of her awesome work.
+Vous pouvez me trouver sur [LinkedIn](https://www.linkedin.com/in/yoan-smit/), [Twitter](https://twitter.com/YoanSmit){:target="_blank"} ou encore [GitHub](https://github.com/naxyoh){:target="_blank"}. N'hésitez à me contacter, ça me fera plaisir ;)
 
 Cheers.
