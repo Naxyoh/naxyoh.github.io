@@ -7,7 +7,7 @@ title: Coding with wolves
 nav-title: C2W
 
 # Short description of your site
-description: You are not alone, join the pack !
+description: Le monde du développement n'est pas une histoire de loup solitaire, rejoins la meute !
 
 # Your name to show in the footer
 author: Yoan Smit
@@ -153,7 +153,7 @@ gtag: "UA-168082556-1"
 title-separator: "-"
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%-d %B %Y"
 
 # Facebook App ID
 #fb_app_id: ""
@@ -162,6 +162,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
+language: fr
 timezone: "Europe/Paris"
 markdown: kramdown
 highlighter: rouge
