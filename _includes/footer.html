@@ -5,19 +5,23 @@
       {% include social-networks-links.html %}
       {% if page.footer-extra %}
         <div class="footer-custom-content">
-          {% include {{ page.footer-extra }} %}
+          {% for file in page.footer-extra %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
       {% endif %}
       <p class="copyright text-muted">
       {% if site.author %}
-        © {{ site.author }}
+        {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
       {{ site.time | date: '%Y' }}
 
       {% if site.url-pretty %}
         &nbsp;&bull;&nbsp;
-        <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
+        <span class="author-site">
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
+        </span>
       {% endif %}
 
       {% if site.matomo %}
@@ -28,10 +32,10 @@
       {% endif%}
       </p>
       <!-- Please don't remove this, keep my open source work credited :) -->
-      <p class="theme-by text-muted">
-        Thème par
-        <a href="https://beautifuljekyll.com" target="_blank">beautiful-jekyll</a>
-      </p>
+      {% unless site.remove-ads %}<p class="theme-by text-muted">
+        Propulsé par
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>{% endunless %}
       <p class="theme-by text-muted">
         Ce blog est couvert selon les termes de la 
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Licence Creative Commons Attribution 4.0 International</a>.
