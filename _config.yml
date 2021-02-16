@@ -5,6 +5,8 @@
 
 # --- Required options --- #
 
+lang: fr
+
 # Name of website
 title: Coding with wolves
 
