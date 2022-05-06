@@ -1,0 +1,27 @@
+.site-header {
+    background-color: gray;
+}
+
+.site-header__navigation-item {
+    float: right;
+}
+
+.site-header__anchor {
+    float: left;
+}
+
+.site-header__avatar-container {
+    overflow: hidden;
+}
+
+.site-header__avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+nav {
+    padding: .5rem;
+}
