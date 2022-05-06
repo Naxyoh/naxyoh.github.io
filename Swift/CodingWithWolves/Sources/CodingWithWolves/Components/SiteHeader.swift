@@ -20,7 +20,7 @@ struct SiteHeader: Component {
                 SiteHeaderLink("Yoan Smit", url: "/about")
                     .class("site-header__navigation-item")
                 Div {
-                    Image(url: "/avatar.png", description: "Avatar de Coding with Wolves")
+                    Image(url: "/images/avatar.png", description: "Avatar de Coding with Wolves")
                         .class("site-header__avatar")
                 }.class("site-header__avatar-container")
             }
