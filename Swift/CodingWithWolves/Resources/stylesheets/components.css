@@ -1,5 +1,7 @@
 .site-header {
-    background-color: gray;
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #DDDDDD;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .site-header__navigation-item {
@@ -8,6 +10,12 @@
 
 .site-header__anchor {
     float: left;
+}
+
+.site-header__link {
+    font-weight: 800;
+    color: #404040;
+    text-decoration: none;
 }
 
 .site-header__avatar-container {

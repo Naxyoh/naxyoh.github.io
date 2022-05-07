@@ -41,7 +41,7 @@ private struct SiteHeaderLink: Component {
     var body: Component {
         Span {
             Link(label, url: url)
-                .class("site-header__navigation-item__link")
+                .class("site-header__link")
         }
     }
     

@@ -19,6 +19,7 @@ extension Node where Context == HTML.DocumentContext {
     private static let stylesheetPaths: [Path] = [
         "/stylesheets/components.css",
         "/stylesheets/resets.css",
+        "/stylesheets/elements.css",
     ]
     
     private static let favicons: [Favicon] = [
