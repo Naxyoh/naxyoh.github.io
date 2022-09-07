@@ -17,14 +17,20 @@ struct SiteHeader: Component {
             Div {
                 SiteHeaderLink("C2W", url: "/posts")
                     .class("site-header__anchor")
-                SiteHeaderLink("Yoan Smit", url: "/about")
-                    .class("site-header__navigation-item")
+                    .class("vertical-center")
                 Div {
                     Image(url: "/images/avatar.png", description: "Avatar de Coding with Wolves")
                         .class("site-header__avatar")
-                }.class("site-header__avatar-container")
+                }
+                    .class("site-header__avatar-container")
+                SiteHeaderLink("Yoan Smit", url: "/about")
+                    .class("site-header__navigation-item")
+                    .class("vertical-center")
+                
             }
-        }.class("site-header")
+                .class("site-header__container")
+        }
+            .class("site-header")
     }
 }
 

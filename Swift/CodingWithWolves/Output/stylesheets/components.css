@@ -4,13 +4,19 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.site-header__navigation-item {
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .site-header__navigation-item {
     float: right;
 }
 
 .site-header__anchor {
     float: left;
-}
+} */
 
 .site-header__link {
     font-weight: 800;
@@ -19,17 +25,21 @@
 }
 
 .site-header__avatar-container {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .site-header__avatar {
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     height: 4rem;
     border-radius: 50%;
 }
 
-nav {
-    padding: .5rem;
-}
+/* .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+} */
