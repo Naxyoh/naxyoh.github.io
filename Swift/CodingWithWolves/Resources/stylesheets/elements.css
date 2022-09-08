@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
@@ -40,4 +44,39 @@ h4 {
 
 h1, h2, h3, h4 {
   margin-top: 1.25rem;
+}
+
+hr.small {
+    max-width: 6.25rem;
+    margin: 1rem auto;
+    border-width: 0.25rem;
+    border-color: inherit;
+    border-radius: 0.1875rem;
+}
+
+hr.gray {
+    border-color: #808080;
+}
+
+article hr {
+    max-width: 25%;
+    border-width: 0.25rem;
+    border-radius: 0.1875rem;
+    border-color: #808080;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+article.post-preview {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+article.post-preview:last-child {
+    border-bottom: 0;
 }

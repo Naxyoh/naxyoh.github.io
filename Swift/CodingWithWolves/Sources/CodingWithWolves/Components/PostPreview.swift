@@ -16,7 +16,7 @@ struct PostPreview: Component {
         Article {
             PostPreviewTitle(
                 title: post.title,
-                subtitle: post.description,
+                subtitle: post.metadata.subtitle,
                 url: post.path.absoluteString)
         }
         .class("post-preview")
@@ -35,6 +35,6 @@ private struct PostPreviewTitle: Component {
                 .class("post-title")
             H3(subtitle)
                 .class("post-subtitle")
-        }
+        }.class("post-preview__title")
     }
 }

@@ -23,7 +23,7 @@ struct SiteHeader: Component {
                         .class("site-header__avatar")
                 }
                     .class("site-header__avatar-container")
-                SiteHeaderLink("Yoan Smit", url: "/about")
+                SiteHeaderLink("YOAN SMIT", url: "/about")
                     .class("site-header__navigation-item")
                     .class("vertical-center")
                 

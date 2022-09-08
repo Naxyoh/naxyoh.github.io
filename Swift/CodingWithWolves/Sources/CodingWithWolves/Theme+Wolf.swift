@@ -22,6 +22,11 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: index, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    HomeHeader(context: context)
+                    PostList(posts: context.allItems(
+                        sortedBy: \.date,
+                        order: .descending
+                    ))
                 }
             )
         }
