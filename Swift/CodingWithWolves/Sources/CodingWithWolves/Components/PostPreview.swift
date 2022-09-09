@@ -18,8 +18,11 @@ struct PostPreview: Component {
                 title: post.title,
                 subtitle: post.metadata.subtitle,
                 url: post.path.absoluteString)
-            Paragraph("Posté le \(post.date)")
-            Paragraph(post.metadata.preview)
+            Paragraph("Posté le \(DateFormatter.wolf.string(from: post.date))")
+                .class("post-preview__metadata")
+            PostPreviewDescription(
+                description: post.metadata.preview,
+                url: post.path.absoluteString)
         }
         .class("post-preview")
     }
@@ -39,4 +42,20 @@ private struct PostPreviewTitle: Component {
                 .class("post-subtitle")
         }.class("post-preview__title")
     }
+}
+
+private struct PostPreviewDescription: Component {
+    
+    let description: String
+    let url: URLRepresentable
+    
+    var body: Component {
+        Div {
+            Text(description).body
+            Link("[Lire&nbsp;la&nbsp;suite]", url: url)
+                .class("post-preview__post-link")
+        }
+        .class("post-preview__preview")
+    }
+    
 }
