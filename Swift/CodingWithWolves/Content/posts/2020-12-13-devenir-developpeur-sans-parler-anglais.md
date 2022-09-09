@@ -2,6 +2,7 @@
 layout: post
 title:  Devenir développeur sans parler anglais
 subtitle: ... pourquoi ça va être complexe
+preview: Pour mon premier article en français, le sujet de l'anglais dans le monde du développement peut paraître ironique pourtant cela reste un sujet sous-estimé par beaucoup, encore aujourd'hui.
 date:   2020-12-13 16:18
 tags: [Marque personnelle, Autour du code]
 ---

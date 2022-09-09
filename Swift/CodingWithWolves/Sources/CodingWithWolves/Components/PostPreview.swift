@@ -18,6 +18,8 @@ struct PostPreview: Component {
                 title: post.title,
                 subtitle: post.metadata.subtitle,
                 url: post.path.absoluteString)
+            Paragraph("Posté le \(post.date)")
+            Paragraph(post.metadata.preview)
         }
         .class("post-preview")
     }

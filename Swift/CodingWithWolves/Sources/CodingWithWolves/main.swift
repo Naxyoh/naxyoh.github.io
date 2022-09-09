@@ -12,6 +12,7 @@ struct CodingWithWolves: Website {
 
     struct ItemMetadata: WebsiteItemMetadata {
         let subtitle: String
+        let preview: String
     }
 
     // Update these properties to configure your website:
