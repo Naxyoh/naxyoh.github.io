@@ -14,11 +14,13 @@ struct HomeHeader: Component {
     
     var body: Component {
         Header {
-            H1("Coding with Wolves")
-                .class("post-list__header__title")
-            HR(style: .header)
-            H2("Le monde du développement n'est pas une histoire de loup solitaire, rejoins la meute !")
-                .class("post-list__header__subtitle")
+            Div{
+                H1(html: "Coding with Wolves")
+                    .class("post-list__header__title")
+                HR(style: .header)
+                H2("Le monde du développement n'est pas une histoire de loup solitaire, rejoins la meute !")
+                    .class("post-list__header__subtitle")
+            }.class("post-list__container")
         }
         .class("post-list__header")
     }
