@@ -52,6 +52,7 @@ private struct PostPreviewDescription: Component {
     var body: Component {
         Div {
             Text(description).body
+            Text(" ")
             Link("[Lire&nbsp;la&nbsp;suite]", url: url)
                 .class("post-preview__post-link")
         }

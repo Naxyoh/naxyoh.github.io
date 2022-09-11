@@ -16,6 +16,7 @@ struct PostList: Component {
         List(posts) { post in
             PostPreview(post: post)
         }
+        .listStyle(.unordered.withItemClass("post-list__item"))
         .class("post-list__container")
     }
     
