@@ -5,3 +5,11 @@
      -ms-transform: translateX(-50%);
      transform: translateX(-50%);
 }
+
+.rounded {
+    border-radius:50%; 
+}
+
+.background-gray {
+    background:#404040;
+}

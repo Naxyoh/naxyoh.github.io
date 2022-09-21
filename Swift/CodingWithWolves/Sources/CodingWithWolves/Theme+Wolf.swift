@@ -27,6 +27,7 @@ extension Theme where Site == CodingWithWolves {
                         sortedBy: \.date,
                         order: .descending
                     ))
+                    SiteFooter(context: context)
                 }
             )
         }
@@ -37,6 +38,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: section, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    SiteFooter(context: context)
                 }
             )
         }
@@ -47,6 +49,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: item, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    SiteFooter(context: context)
                 }
             )
         }
@@ -57,6 +60,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    SiteFooter(context: context)
                 }
             )
         }
@@ -67,6 +71,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    SiteFooter(context: context)
                 }
             )
         }
@@ -77,6 +82,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    SiteFooter(context: context)
                 }
             )
         }

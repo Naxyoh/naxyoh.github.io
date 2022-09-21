@@ -22,13 +22,53 @@
     text-decoration: none;
 }
 
-.site-header__avatar-container {
-    top: 5%;
-}
-
 .site-header__avatar {
     height: 6rem;
     border-radius: 50%;
+}
+
+/*
+ **
+    Site Footer
+ **
+*/
+
+.footer__container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer__container ul {
+    text-align: center;
+}
+
+.footer__container ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.footer__container ul li a {
+    text-decoration: none;
+}
+
+.link-container {
+    display: table;
+    height: 3em;
+    width: 3em;
+}
+
+.link-container:hover {
+    background-color: #0085A1;
+}
+
+.link-container i {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5em;
+    color: white;
 }
 
 /*
