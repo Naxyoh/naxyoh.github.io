@@ -26,17 +26,24 @@ struct SiteFooter: Component {
                     SocialLinkButton(link: socialLink)
                 }
                 Span {
-                    Text("Yoan Smit &nbsp;•&nbsp; 2021 &nbsp;•&nbsp; ")
+                    Text("Yoan Smit &nbsp;•&nbsp; 2020-2022 &nbsp;•&nbsp; ")
                     Link("CodingWithWolves.com", url: context.index.path.absoluteString)
+                        .class("footer-link")
                 }
+                    .class("footer__copyright")
+                    .class("footer-text")
                 Paragraph {
                     Text("Ce blog est couvert selon les termes de la ")
+                        
                     Link(
                         "Licence Creative Commons Attribution 4.0 International",
                         url: "http://creativecommons.org/licenses/by/4.0/"
                     )
                         .attribute(named: "target", value: "_blank")
+                        .class("footer-link")
                 }
+                .class("footer__license")
+                .class("footer-text")
             }
             .class("footer__container")
         }

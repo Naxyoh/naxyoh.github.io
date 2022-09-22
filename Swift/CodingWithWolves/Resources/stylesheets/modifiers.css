@@ -13,3 +13,15 @@
 .background-gray {
     background:#404040;
 }
+
+.footer-link {
+    color: #404040;
+}
+
+.footer-link:hover {
+    color: #0085A1;
+}
+
+.footer-text {
+    color: #777777;
+}

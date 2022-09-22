@@ -22,11 +22,13 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: index, on: context.site),
                 .body {
                     SiteHeader(context: context)
-                    HomeHeader(context: context)
-                    PostList(posts: context.allItems(
-                        sortedBy: \.date,
-                        order: .descending
-                    ))
+                    BodyContent {
+                        HomeHeader(context: context)
+                        PostList(posts: context.allItems(
+                            sortedBy: \.date,
+                            order: .descending
+                        ))
+                    }
                     SiteFooter(context: context)
                 }
             )
@@ -38,6 +40,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: section, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    BodyContent()
                     SiteFooter(context: context)
                 }
             )
@@ -49,6 +52,11 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: item, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    BodyContent {
+                        Article {
+                            Div(item.content.body)
+                        }
+                    }
                     SiteFooter(context: context)
                 }
             )
@@ -60,6 +68,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    BodyContent(page.body)
                     SiteFooter(context: context)
                 }
             )
@@ -71,6 +80,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    BodyContent()
                     SiteFooter(context: context)
                 }
             )
@@ -82,6 +92,7 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
+                    BodyContent()
                     SiteFooter(context: context)
                 }
             )

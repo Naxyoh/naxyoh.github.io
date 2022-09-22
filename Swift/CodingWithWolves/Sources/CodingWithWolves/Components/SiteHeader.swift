@@ -15,7 +15,7 @@ struct SiteHeader: Component {
     var body: Component {
         Navigation {
             Div {
-                SiteHeaderLink("C2W", url: "/posts")
+                SiteHeaderLink("C2W", url: "/")
                     .class("site-header__anchor")
                     .class("vertical-center")
                 SiteHeaderLink("YOAN SMIT", url: "/about")
