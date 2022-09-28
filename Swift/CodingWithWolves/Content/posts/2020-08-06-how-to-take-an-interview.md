@@ -4,6 +4,7 @@ title: How to take an interview
 subtitle: ... and achieve your dream job
 preview: A few weeks ago I quitted my job, a job I loved but for some reasons I chose to leave it behind and face new challenges like sharing my experience, help junior developers to grow, things like that. But the kind of positions where I get to do that is not as easy to find as a developer-only role. I had to prepare and this is what I learnt from this process.
 date:   2020-08-19 17:45
+wordCount: 973
 tags: [Job]
 --- 
 

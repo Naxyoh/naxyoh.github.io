@@ -95,13 +95,24 @@ article.post-preview:last-child {
 
 div.page-content {
     flex: 1 0 auto;
+    margin: 6.125rem auto 3.125rem;
+    padding: 0 6.666667%;
+    max-width: 970px;
 }
 
 footer {
     padding: 3.125rem 0;
     border-top: 1px #EAEAEA solid;
-    margin-top: 3.125rem;
     font-size: 0.875rem;
     background-color: #EAEAEA;
     flex-shrink: 0;
+}
+
+code {
+    padding: 0.125rem 0.25rem;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 0.25rem;
+    font-size: 87.5%;
+    word-wrap: break-word;
 }

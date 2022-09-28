@@ -11,6 +11,7 @@ struct CodingWithWolves: Website {
 
     struct ItemMetadata: WebsiteItemMetadata {
         let subtitle: String
+        let wordCount: Int
         let preview: String
     }
 

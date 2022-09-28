@@ -4,6 +4,7 @@ title:  Why you should go freelance
 subtitle: ... and why you should not
 preview: I have been in the IT industry for more than five years now as a mobile developer working mostly for a service-based company. When I tell people about my job I often get asked the following question : "Why don't you go freelance ? You would make a ton of money !". 
 date:   2020-07-20 10:23
+wordCount: 1012
 tags: [Job]
 --- 
 

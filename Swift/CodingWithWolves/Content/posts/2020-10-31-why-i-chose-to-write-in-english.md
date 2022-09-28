@@ -4,6 +4,7 @@ title:  Why I chose to write in English
 subtitle: ... and the reasons why I began writing
 preview: A few weeks ago a friend of mine, Jordan Chapuy, asked me a bunch of questions about this blog. He has been writing on Medium for quite a while now and he wanted to start his own blog. He was hesitating about whether he should write in English vs French.
 date:   2020-10-31 02:45
+wordCount: 876
 tags: [Blog]
 --- 
 

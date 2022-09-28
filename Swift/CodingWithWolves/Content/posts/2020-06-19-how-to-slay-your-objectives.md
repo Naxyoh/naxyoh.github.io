@@ -4,6 +4,7 @@ title: How to slay your objectives
 subtitle: ... and the way to master KPIs
 preview: Setting new goals is important, for your personal life and your professional life, it is what makes you better everyday. I have had a lot of goals in my life, some quite small and easy ...
 date:   2020-06-23 09:41
+wordCount: 1126
 tags: [Coding philosophy]
 ---
 

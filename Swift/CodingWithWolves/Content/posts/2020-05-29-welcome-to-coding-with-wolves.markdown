@@ -4,6 +4,7 @@ title:  Welcome to Coding with wolves!
 subtitle: Hi everyone !
 date: 2020-05-29 13:30
 preview: I have been wondering a while about whether I should start a blog or not.
+wordCount: 122
 category: [Blog]
 ---
 

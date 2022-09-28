@@ -4,15 +4,17 @@ title:  Devenir développeur sans parler anglais
 subtitle: ... pourquoi ça va être complexe
 preview: Pour mon premier article en français, le sujet de l'anglais dans le monde du développement peut paraître ironique pourtant cela reste un sujet sous-estimé par beaucoup, encore aujourd'hui.
 date:   2020-12-13 16:18
+wordCount: 1155
 tags: [Marque personnelle, Autour du code]
 ---
 
 Pour mon premier article en français, le sujet de l'anglais dans le monde du développement peut paraître ironique
 pourtant cela reste un sujet sous-estimé par beaucoup, encore aujourd'hui.
 
+![Non mais allo quoi](/images/allo.jpg)
 <p>
     <figure>
-        <img src="{{site.url}}/assets/img/allo.jpg" alt="Non mais allo quoi."/>
+        <img src="/images/allo.jpg" alt="Non mais allo quoi."/>
     </figure>
 </p>
 
@@ -75,11 +77,13 @@ Prenons quelques exemples :
 
 Partons d'un cas qui m'est déjà arrivé :
 
->Lors d'une refonte de l'intégration continue du projet, le développeur qui s'en est chargé décide de rédiger la documentation sur les nouvelles fonctionnalités en anglais.
->
->Manque de bol, il était fan des tournures à rallonge, ce qui a donné des phrases très longues, avec du vocabulaire très technique, d'une complexité pas toujours justifiée.
->
->On ne s'est rendu compte du problème que pendant ses vacances, lorsqu'on a du résoudre un souci sur ces fameuses nouvelles fonctionnalités, comme il l'avait rédigé seul, certains choix de terme n'était connu que de lui, on a donc eu beaucoup de mal à comprendre ce qu'il voulait dire.
+> Lors d'une refonte de l'intégration continue du projet, le développeur qui s'en est chargé décide de rédiger la documentation sur les nouvelles fonctionnalités en anglais.
+> 
+> 
+> Manque de bol, il était fan des tournures à rallonge, ce qui a donné des phrases très longues, avec du vocabulaire très technique, d'une complexité pas toujours justifiée.
+> 
+> 
+> On ne s'est rendu compte du problème que pendant ses vacances, lorsqu'on a du résoudre un souci sur ces fameuses nouvelles fonctionnalités, comme il l'avait rédigé seul, certains choix de terme n'était connu que de lui, on a donc eu beaucoup de mal à comprendre ce qu'il voulait dire.
 
 Le problème que montre cet exemple, outre un souci de process, est que la documentation c'est surtout de la littérature. 
 

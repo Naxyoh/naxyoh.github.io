@@ -26,7 +26,7 @@ struct SiteFooter: Component {
                     SocialLinkButton(link: socialLink)
                 }
                 Span {
-                    Text("Yoan Smit &nbsp;•&nbsp; 2020-2022 &nbsp;•&nbsp; ")
+                    Text("Yoan Smit © 2022 &nbsp;•&nbsp; ")
                     Link("CodingWithWolves.com", url: context.index.path.absoluteString)
                         .class("footer-link")
                 }

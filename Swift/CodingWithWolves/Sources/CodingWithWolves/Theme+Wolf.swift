@@ -23,7 +23,9 @@ extension Theme where Site == CodingWithWolves {
                 .body {
                     SiteHeader(context: context)
                     BodyContent {
-                        HomeHeader(context: context)
+                        PageHeader(
+                            title: "Coding with Wolves",
+                            subtitle: "Le monde du développement n'est pas une histoire de loup solitaire, rejoins la meute !")
                         PostList(posts: context.allItems(
                             sortedBy: \.date,
                             order: .descending
@@ -54,6 +56,7 @@ extension Theme where Site == CodingWithWolves {
                     SiteHeader(context: context)
                     BodyContent {
                         Article {
+                            PostHeader(post: item)
                             Div(item.content.body)
                         }
                     }
@@ -68,7 +71,12 @@ extension Theme where Site == CodingWithWolves {
                 .head(for: page, on: context.site),
                 .body {
                     SiteHeader(context: context)
-                    BodyContent(page.body)
+                    BodyContent {
+                        PageHeader(
+                            title: page.content.title,
+                            subtitle: page.description)
+                        Div(page.body)
+                    }
                     SiteFooter(context: context)
                 }
             )

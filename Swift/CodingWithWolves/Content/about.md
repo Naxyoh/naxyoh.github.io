@@ -1,7 +1,7 @@
 ---
 layout: page
 title: À propos
-subtitle: Ravi de vous rencontrer !
+description: Ravi de vous rencontrer !
 permalink: /about/
 ---
 

@@ -9,23 +9,21 @@ import Foundation
 import Plot
 import Publish
 
-struct HomeHeader: Component {
-    var context: PublishingContext<CodingWithWolves>
+struct PageHeader: Component {
+    
+    let title: String
+    let subtitle: String
     
     var body: Component {
         Header {
             Div{
-                H1(html: "Coding with Wolves")
+                H1(title)
                     .class("post-list__header__title")
                 HR(style: .header)
-                H2("Le monde du développement n'est pas une histoire de loup solitaire, rejoins la meute !")
+                H2(subtitle)
                     .class("post-list__header__subtitle")
             }.class("post-list__container")
         }
         .class("post-list__header")
     }
 }
-
-
-
-

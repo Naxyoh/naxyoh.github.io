@@ -4,6 +4,7 @@ title:  What it means to be a developer
 subtitle: ... and tips to be a better one
 preview: I remember when I was a kid I pictured developers as one beardy big guy with glasses, barely sleeping, hacking the FBI with his laptop and being only interested in computer science. While it might be true that many developers wear glasses, after spending so much time in front of a screen I would say it is normal, nowadays this picture could not be further from the truth.
 date:   2020-06-09 07:41
+wordCount: 868
 tags: [Coding philosophy]
 ---
 
