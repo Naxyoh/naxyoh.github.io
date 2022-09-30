@@ -12,11 +12,7 @@ I have been in the IT industry for more than five years now as a mobile develope
 
 When I tell people about my job I often get asked the following question : "Why don't you go freelance ? You would make a ton of money !". 
 
-<p>
-    <figure>
-        <img src="{{site.url}}/assets/img/doubt.jpg" alt="You think so ?"/>
-    </figure>
-</p>
+![You think so ? Then think again](/images/doubt.jpg)
 
 And that is a legitimate question !
 

@@ -14,11 +14,7 @@ But the kind of positions where I get to do that is not as easy to find as a dev
 
 I had to prepare and this is what I learnt from this process.
 
-<p>
-    <figure>
-        <img src="{{site.url}}/assets/img/interview.jpg" alt="Is this interview ready for me ?"/>
-    </figure>
-</p>
+![Is this interview ready for me ?](/images/interview.jpg)
 
 ## Finding the right job
 

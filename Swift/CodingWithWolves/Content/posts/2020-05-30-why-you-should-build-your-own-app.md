@@ -16,11 +16,7 @@ When you start coding for a company with a more-or-less organized team these won
 
 ## Here come the troubles
 
-<p>
-    <figure>
-        <img src="{{site.url}}/assets/img/strength.jpeg" alt="Oh Lord give me strength"/>
-    </figure>
-</p>
+![Oh Lord give me strength](/images/strength.jpeg)
 
 As the product grows you encounter issues we all faced : the product need is not well specified and you have to redo your development several times. The UI designer did not specified which color you should use for a given element and you have to get up and go all the way to his desk to ask him to do his job. Trust me, the list still goes on for quite a bit.
 
@@ -35,13 +31,14 @@ You can't expect someone to try to understand your work and the obstacles you ha
 The idea is to try to do their work to see what their obstacles are. The best way to do this is to build a whole app all by yourself using a real process.
 
 What you will learn by doing this :
-+ Planning a road map
-+ See how difficult it is to think about all the use cases
-+ Learning the user experience basics
-+ Thinking about user interface consistency
-+ Setting up a project
-+ Shipping an app to production
-+ ... and more
+
+- Planning a road map
+- See how difficult it is to think about all the use cases
+- Learning the user experience basics
+- Thinking about user interface consistency
+- Setting up a project
+- Shipping an app to production
+- ... and more
 
 I won't go into the details but I really recommend doing all these things by yourself just to see how difficult each part of a project can be. I can tell you that after that instead of complaining about your colleagues you will be willing to help them ! And the best part is that you will learn a lot in the process, even about your own work, think about how valuable it can be for a junior developer to learn how to ship an app.
 

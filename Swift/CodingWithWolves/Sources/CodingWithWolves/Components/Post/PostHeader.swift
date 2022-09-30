@@ -13,7 +13,6 @@ struct PostHeader: Component {
     
     let post: Item<CodingWithWolves>
     
-    
     var body: Component {
         Div {
             H1(post.title)

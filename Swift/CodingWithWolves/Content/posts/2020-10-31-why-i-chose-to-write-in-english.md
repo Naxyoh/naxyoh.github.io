@@ -14,11 +14,7 @@ One of the hardest question he asked me was : "Why do _you_ write in English ?".
 
 And that was indeed a good question.
 
-<p>
-    <figure>
-        <img src="{{site.url}}/assets/img/no-clue.jpg" alt="why do you ask ?"/>
-    </figure>
-</p>
+![Why do you ask ?](/images/no-clue.jpg)
 
 ## The reasons why I launched my blog
 

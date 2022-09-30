@@ -18,11 +18,7 @@ And yet over time I realized I could achieve some hard goals but still dropping 
 
 _If the difficulty of the goal is not what makes it easy to meet then what is ?_
 
-<p>
-    <figure>
-        <img src="{{site.url}}/assets/img/smart.jpg" alt="It is easy, be S.M.A.R.T."/>
-    </figure>
-</p>
+![It is easy, be SMART](/images/smart.jpg)
 
 ## Set a SMART goal
 

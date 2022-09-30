@@ -196,7 +196,7 @@ p.post-preview__preview {
 */
 
 .post-details__title {
-    font-size: 2.1875rem;
+    font-size: 3.1875rem;
 }
 
 .post-details__subtitle {
@@ -206,4 +206,9 @@ p.post-preview__preview {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin: 0.625rem 0 1.25rem 0;
+}
+
+.post-details__container img {
+    margin: 2rem auto 1rem;
+    display: block;
 }

@@ -49,7 +49,15 @@ extension Theme where Site == CodingWithWolves {
         }
         
         func makeItemHTML(for item: Item<CodingWithWolves>, context: PublishingContext<CodingWithWolves>) throws -> HTML {
-            HTML(
+            let posts = context.allItems(
+                sortedBy: \.date,
+                order: .descending
+            )
+            
+            let previousPost = posts.item(before: item)
+            let nextPost = posts.item(after: item)
+            
+            return HTML(
                 .lang(context.site.language),
                 .head(for: item, on: context.site),
                 .body {
@@ -58,7 +66,12 @@ extension Theme where Site == CodingWithWolves {
                         Article {
                             PostHeader(post: item)
                             Div(item.content.body)
+                            PostFooter(
+                                previousPost: previousPost,
+                                nextPost: nextPost)
                         }
+                        .attribute(named: "role", value: "main")
+                        .class("post-details__container")
                     }
                     SiteFooter(context: context)
                 }

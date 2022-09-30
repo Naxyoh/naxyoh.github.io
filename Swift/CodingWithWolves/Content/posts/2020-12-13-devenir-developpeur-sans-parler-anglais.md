@@ -12,11 +12,6 @@ Pour mon premier article en français, le sujet de l'anglais dans le monde du d�
 pourtant cela reste un sujet sous-estimé par beaucoup, encore aujourd'hui.
 
 ![Non mais allo quoi](/images/allo.jpg)
-<p>
-    <figure>
-        <img src="/images/allo.jpg" alt="Non mais allo quoi."/>
-    </figure>
-</p>
 
 _(J'avoue ne pas totalement assumer ce meme ...)_
 
