@@ -212,3 +212,22 @@ p.post-preview__preview {
     margin: 2rem auto 1rem;
     display: block;
 }
+
+.post-details__footer a {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #404040;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem 0.75rem;
+}
+
+.post-details__footer__previous {
+    float: left;
+}
+
+.post-details__footer__next {
+    float: right;
+}

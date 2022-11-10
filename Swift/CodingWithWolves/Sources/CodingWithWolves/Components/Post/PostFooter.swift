@@ -15,13 +15,16 @@ struct PostFooter: Component {
     
     
     var body: Component {
-        HTML {
+        Div {
             if let previousPost = previousPost {
-                Link("Previous", previousPost.path.absoluteString)
+                Link("← ARTICLE PRÉCÉDENT", url: previousPost.path.absoluteString)
+                    .class("post-details__footer__previous")
             }
             if let nextPost = nextPost {
-                Link("Next", nextPost.path.absoluteString)
+                Link("ARTICLE SUIVANT →", url: nextPost.path.absoluteString)
+                    .class("post-details__footer__next")
             }
         }
+        .class("post-details__footer")
     }
 }
