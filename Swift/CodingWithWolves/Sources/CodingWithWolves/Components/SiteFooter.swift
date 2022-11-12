@@ -33,15 +33,25 @@ struct SiteFooter: Component {
                     .class("footer__copyright")
                     .class("footer-text")
                 Paragraph {
+                    Text("Fait avec ♥ grâce à ")
+                    Link(
+                        "Publish",
+                        url: "https://github.com/johnsundell/publish"
+                    )
+                        .class("footer-link")
+                }
+                .linkTarget(.blank)
+                .class("footer__license")
+                .class("footer-text")
+                Paragraph {
                     Text("Ce blog est couvert selon les termes de la ")
-                        
                     Link(
                         "Licence Creative Commons Attribution 4.0 International",
                         url: "http://creativecommons.org/licenses/by/4.0/"
                     )
-                        .attribute(named: "target", value: "_blank")
                         .class("footer-link")
                 }
+                .linkTarget(.blank)
                 .class("footer__license")
                 .class("footer-text")
             }
