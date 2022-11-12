@@ -1,6 +1,6 @@
 /*
  **
- //MARK: - Site Header
+  MARK: - Site Header
  **
 */
 
@@ -31,9 +31,15 @@
     border-radius: 50%;
 }
 
+@media screen and (max-width: 425px) {
+    .site-header__avatar {
+        height: 5rem;
+    }
+}
+
 /*
  **
- //MARK: - Site Footer
+  MARK: - Site Footer
  **
 */
 
@@ -50,6 +56,12 @@
     text-align: center;
     padding: 0;
     margin: 0 0 3rem 0;
+}
+
+@media screen and (max-width: 425px) {
+    .footer__container ul {
+        margin: 0 0 1rem 0;
+    }
 }
 
 .footer__container ul li {
@@ -83,13 +95,19 @@
     font-size: 1rem;
 }
 
+@media screen and (max-width: 425px) {
+    .footer__copyright {
+        font-size: 0.875rem;
+    }
+}
+
 .footer__license {
     margin: 0.625rem 0 0;
 }
 
 /*
  **
-//MARK: - Page Header
+  MARK: - Page Header
  **
 */
 
@@ -102,6 +120,12 @@
     margin-right: auto;
 }
 
+@media screen and (max-width: 425px) {
+    .post-list__header__title {
+        font-size: 3rem;
+    }
+}
+
 .post-list__header__subtitle {
     font-size: 1.6875rem;
     line-height: 1.1;
@@ -112,9 +136,15 @@
     text-align: center;
 }
 
+@media screen and (max-width: 425px) {
+    .post-list__header__subtitle {
+        font-size: 1.5rem;
+    }
+}
+
 /*
  **
- //MARK: - Post List
+ MARK: - Post List
  **
 */
 
@@ -134,6 +164,11 @@ ul.post-list__container li {
     border-bottom: 1px solid #eee;
 }
 
+ul.post-list__container li:first-child {
+    padding: 0 0 1.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
 ul.post-list__container li:last-child {
     border-bottom: 0;
 }
@@ -141,7 +176,7 @@ ul.post-list__container li:last-child {
 
 /*
  **
- //MARK: Post Preview
+ MARK: - Post Preview
  **
 */
 
@@ -191,13 +226,23 @@ p.post-preview__preview {
 
 /*
  **
- //MARK: Post Details
+ MARK: - Post Details
  **
 */
+
+/* MARK: Title */
 
 .post-details__title {
     font-size: 3.1875rem;
 }
+
+@media screen and (max-width: 425px) {
+    .post-details__title {
+        font-size: 2rem;
+    }
+}
+
+/*MARK: Subtitle*/
 
 .post-details__subtitle {
     font-size: 1.6875rem;
@@ -208,10 +253,22 @@ p.post-preview__preview {
     margin: 0.625rem 0 1.25rem 0;
 }
 
+@media screen and (max-width: 425px) {
+    .post-details__subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+/*MARK: Image*/
+
 .post-details__container img {
     margin: 2rem auto 1rem;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
+
+/*MARK: Footer*/
 
 .post-details__footer a {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

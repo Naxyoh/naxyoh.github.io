@@ -21,6 +21,12 @@ nav {
   padding: 2rem;
 }
 
+@media screen and (max-width: 425px) {
+    nav {
+      padding: 1rem;
+    }
+}
+
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
@@ -53,6 +59,24 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -99,6 +123,13 @@ div.page-content {
     margin: 4.125rem auto 3.125rem;
     padding: 0 6.666667%;
     max-width: 970px;
+    width: 100%
+}
+
+@media screen and (max-width: 425px) {
+    div.page-content {
+        margin: 2rem auto 1rem;
+    }
 }
 
 footer {
@@ -107,6 +138,12 @@ footer {
     font-size: 0.875rem;
     background-color: #EAEAEA;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        padding: 2rem 0;
+    }
 }
 
 code {
