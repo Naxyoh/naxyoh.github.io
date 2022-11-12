@@ -1,9 +1,8 @@
 ---
-layout: post
 title: How to slay your objectives
 subtitle: ... and the way to master KPIs
 preview: Setting new goals is important, for your personal life and your professional life, it is what makes you better everyday. I have had a lot of goals in my life, some quite small and easy ...
-date:   2020-06-23 09:41
+date: 2020-06-23 09:41
 wordCount: 1126
 tags: [Coding philosophy]
 ---
@@ -36,7 +35,7 @@ Your goal should be crystal clear.
 
 - You want to lose weight ? Too vague. Think about a way to lose weight. Work out more often or improve your diet.
 
-- You want to be a better developer ? Too vague. Again : be more specific. Work some katas, read blog articles (like [my previous article]({%  post_url  2020-06-09-what-it-means-to-be-a-developer %})).
+- You want to be a better developer ? Too vague. Again : be more specific. Work some katas, read blog articles (like [my previous article](/posts/2020-06-09-what-it-means-to-be-a-developer)).
 
 ### Measurable
 
@@ -124,12 +123,12 @@ _Think about it._
 
 If your goal is to attract as many people as you can then indeed that is a good KPI but if your goal is to make a useful blog, one you can be proud of then do you think it is still that good of an idea ?
 
-To know if people are interested in your blog you could instead check the session time, the [rebound rate](https://en.wikipedia.org/wiki/Bounce_rate){:target="_blank"} or if they returned to your blog.
+To know if people are interested in your blog you could instead check the session time, the [rebound rate](https://en.wikipedia.org/wiki/Bounce_rate) or if they returned to your blog.
 
 ---
 
 I hope you enjoyed this article and that it will help you dealing with your everyday goals and with your next New Year's resolution.
 
-If you like it and would like more details feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/yoan-smit/){:target="_blank"}.
+If you like it and would like more details feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit) or [LinkedIn](https://www.linkedin.com/in/yoan-smit/).
 
 Cheers.

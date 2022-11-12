@@ -44,7 +44,7 @@ I did not take the time to ask myself what I wanted to do and it took me almost 
 
 I highly recommend you to take that time. It is worth it on the long run.
 
-Once you know where you are heading, send a bunch of CV, then you are up to face the first challenge.
+Once you know where you are heading, send a bunch of resumes, then you are up to face the first challenge.
 
 ## The HR interview
 
@@ -112,12 +112,10 @@ This will allow you to be more confident when you take the technical interview f
 
 Usually if everything went according to plan the next step will be meeting some folks you will working with or even your future boss to talk about money, which is just another battle for you to fight.
 
-- - -
+---
 
 This might sound like a quest to you but that is what it is. My last advice : enjoy the process, the more you enjoy it the easier it will be.
 
 I hope it will help you in your journey of finding the job you want.
-
-As usual feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/yoan-smit/){:target="_blank"}.
 
 Cheers.

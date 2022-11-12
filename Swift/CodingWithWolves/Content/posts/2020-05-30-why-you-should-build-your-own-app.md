@@ -2,7 +2,7 @@
 title:  Why you should build your own app
 subtitle: ... and then let it die
 preview: When you start coding without a frame usually what you do is messy, I mean no product road map, your user interface looks like Windows 95 and you might even be coding without any versioning tool because well, you don't give a damn about all this.
-date:   2020-05-30 13:30
+date: 2020-05-30 13:30
 wordCount: 886
 tags: [Personal brand]
 ---

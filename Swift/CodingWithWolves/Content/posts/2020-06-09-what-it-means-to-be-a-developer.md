@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  What it means to be a developer
 subtitle: ... and tips to be a better one
 preview: I remember when I was a kid I pictured developers as one beardy big guy with glasses, barely sleeping, hacking the FBI with his laptop and being only interested in computer science. While it might be true that many developers wear glasses, after spending so much time in front of a screen I would say it is normal, nowadays this picture could not be further from the truth.
-date:   2020-06-09 07:41
+date: 2020-06-09 07:41
 wordCount: 868
 tags: [Coding philosophy]
 ---
@@ -81,8 +80,6 @@ Most of the time the team I work with is the most crucial factor when choosing a
 
 There is a lot you can do to keep improving and it does not concern junior developers only.
 
-How about you, what is your strategy ? I would love it if you shared it with me on Twitter or LinkedIn.
-
 Cheers.
 
-PS : If you are looking for some materials [Martin Fowler's blog](https://martinfowler.com){:target="_blank"} or [Robert C. Martin's blog](https://blog.cleancoder.com){:target="_blank"} (even if this one lacks user experience) are must read !
+PS : If you are looking for some materials [Martin Fowler's blog](https://martinfowler.com) or [Robert C. Martin's blog](https://blog.cleancoder.com) are a good starting point !

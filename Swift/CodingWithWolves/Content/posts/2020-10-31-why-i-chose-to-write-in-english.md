@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Why I chose to write in English
 subtitle: ... and the reasons why I began writing
 preview: A few weeks ago a friend of mine, Jordan Chapuy, asked me a bunch of questions about this blog. He has been writing on Medium for quite a while now and he wanted to start his own blog. He was hesitating about whether he should write in English vs French.
@@ -97,6 +96,6 @@ That is why this article is the last one in English for now.
  
  This is a huge decision for me and I would love to hear your reactions ! 
  
- As usual feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/yoan-smit/){:target="_blank"} and to share this article using the little icons just below.
+ As usual feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit) or [LinkedIn](https://www.linkedin.com/in/yoan-smit/) and to share this article using the little icons just below.
 
 Cheers.

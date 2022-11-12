@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  Why you should go freelance
 subtitle: ... and why you should not
 preview: I have been in the IT industry for more than five years now as a mobile developer working mostly for a service-based company. When I tell people about my job I often get asked the following question : "Why don't you go freelance ? You would make a ton of money !". 
-date:   2020-07-20 10:23
+date: 2020-07-20 10:23
 wordCount: 1012
 tags: [Job]
 --- 
@@ -33,7 +32,7 @@ Talking about frustration, no matter how hard you work, effort does not equal mo
 
 ### Employer
 
-This time you are the one employing others. You can launch your startup or your garage it does not matter, you are the boss.
+This time you are the one employing others. You can launch your startup from your garage it does not matter, you are the boss.
 
 The main thing about being the boss is that YOU own the business, and that means several things.
 
@@ -46,39 +45,37 @@ And of course, money, because this is what most entrepreneurs are after. Just li
 Owning a company is a dream for many people but do not forget that you will do extra hours, be under a lot of stress, but in the end whether it is a success or not depends on you.
  
 ### Freelancer
- 
- This is it at last ! I will try to be more specific on this one.
- 
- Being freelancer means you are self-employed, your employee and employer at the same time. But in the meantime you have different pros and cons from the other two.
- 
- First you have to be legally a freelancer, that means filling a lot of paperwork, crossing your fingers you did not forget anything.
- 
- Once it is official you have to find a place to work, not every company are inclined to hire a freelancer and you will probably be in competition with service-based companies, companies that work for other companies, so if you just started as a freelancer, expect some hardship.
- 
- Then there is the question of money. That is the main reason people choose to go down that road. Once again it will depend on the company you work for. 
- 
- For those you do not know how a freelancer is paid, at least in the French IT industry, upon the signature of the contract, you and the one who hires you agree on how much you will be paid per day. 
- Do not forget about the taxes, but your salary will still outperform the income you get as an employee.
- 
- _Dude, why don't everyone go freelance then ?!_
- 
- Because it is not that simple. When you are an employee all you need to be good at is your job but when you are a freelancer it is a lot more complicated !
- 
- Firstly you are not assured to earn money every month, if the task you were hired for is done you have to look for a new position and that can take time.
- 
- Secondly, you need to be good at your job obviously to be recruited but you also need to be a marketer to find job opportunity, a salesperson to actually be hired, a accountant to keep track of your money, a HR manager to keep in touch with everyone you worked with and more. To be a good freelancer, think of yourself as a swiss knife (you know, MacGyver's best friend).
- 
- You also have to manage your health care and you can forget about paid holidays because no work = no money.
- 
- Short story long, yes you will earn a lot more if you look at employee vs freelancer, but just like employee vs employer, the job is entirely different, it is not only a question of money. Just weight the pros and cons and see what is best for yourself.
- 
- ---
- 
- I would love to hear about you if you choose to be a freelancer and what were you reasons ! 
- 
- As usual feel free to reach out to me on [Twitter](https://twitter.com/YoanSmit){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/yoan-smit/){:target="_blank"}.
+
+This is it at last ! I will try to be more specific on this one.
+
+Being freelancer means you are self-employed, your employee and employer at the same time. But in the meantime you have different pros and cons from the other two.
+
+First you have to be legally a freelancer, that means filling a lot of paperwork, crossing your fingers you did not forget anything.
+
+Once it is official you have to find a place to work, not every company are inclined to hire a freelancer and you will probably be in competition with service-based companies, companies that work for other companies, so if you just started as a freelancer, expect some hardship.
+
+Then there is the question of money. That is the main reason people choose to go down that road. Once again it will depend on the company you work for. 
+
+For those you do not know how a freelancer is paid, at least in the French IT industry, upon the signature of the contract, you and the one who hires you agree on how much you will be paid per day. 
+Do not forget about the taxes, but your salary will still outperform the income you get as an employee.
+
+_Dude, why doesn't everyone go freelance then ?!_
+
+Because it is not that simple. When you are an employee all you need to be good at your job but when you are a freelancer it is a lot more complicated !
+
+Firstly you are not assured to earn money every month, if the task you were hired for is done you have to look for a new position and that can take time.
+
+Secondly, you need to be good at your job obviously to be recruited but you also need to be a marketer to find job opportunity, a salesperson to actually be hired, a accountant to keep track of your money, a HR manager to keep in touch with everyone you worked with and more. To be a good freelancer, think of yourself as a swiss knife (you know, MacGyver's best friend).
+
+You also have to manage your health care and you can forget about paid holidays because no work = no money.
+
+Short story long, yes you will earn a lot more if you look at employee vs freelancer, but just like employee vs employer, the job is entirely different, it is not only a question of money. Just weight the pros and cons and see what is best for yourself.
+
+***
+
+Employee vs Freelancer vs Employer, none is better than the others, it all depends on what kind of situation you want to be in !
 
 Cheers.
- 
+
  
 
