@@ -23,5 +23,29 @@ struct CodingWithWolves: Website {
     var imagePath: Path? { nil }
 }
 
-// This will generate your website using the built-in Foundation theme:
-try CodingWithWolves().publish(withTheme: .wolf)
+let plugins: [Plugin<CodingWithWolves>] = []
+let indentation: Indentation.Kind? = nil
+let additionalSteps: [PublishingStep<CodingWithWolves>] = []
+let rssFeedSections: Set<CodingWithWolves.SectionID> = Set(CodingWithWolves.SectionID.allCases)
+let rssFeedConfig: RSSFeedConfiguration? = .default
+let deploymentMethod: DeploymentMethod<CodingWithWolves>? = nil
+
+try CodingWithWolves()
+    .publish(
+        using: [
+            .group(plugins.map(PublishingStep.installPlugin)),
+            .optional(.copyResources()),
+            .addMarkdownFiles(),
+            .sortItems(by: \.date, order: .descending),
+            .group(additionalSteps),
+            .generateHTML(withTheme: .wolf, indentation: indentation),
+            .unwrap(rssFeedConfig) { config in
+                .generateRSSFeed(
+                    including: rssFeedSections,
+                    config: config
+                )
+            },
+            .generateSiteMap(indentedBy: indentation),
+            .unwrap(deploymentMethod, PublishingStep.deploy)
+        ]
+    )

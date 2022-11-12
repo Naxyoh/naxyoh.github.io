@@ -72,13 +72,11 @@ Prenons quelques exemples :
 
 Partons d'un cas qui m'est déjà arrivé :
 
-> Lors d'une refonte de l'intégration continue du projet, le développeur qui s'en est chargé décide de rédiger la documentation sur les nouvelles fonctionnalités en anglais.
-> 
-> 
-> Manque de bol, il était fan des tournures à rallonge, ce qui a donné des phrases très longues, avec du vocabulaire très technique, d'une complexité pas toujours justifiée.
-> 
-> 
-> On ne s'est rendu compte du problème que pendant ses vacances, lorsqu'on a du résoudre un souci sur ces fameuses nouvelles fonctionnalités, comme il l'avait rédigé seul, certains choix de terme n'était connu que de lui, on a donc eu beaucoup de mal à comprendre ce qu'il voulait dire.
+<blockquote>
+<p>Lors d'une refonte de l'intégration continue du projet, le développeur qui s'en est chargé décide de rédiger la documentation sur les nouvelles fonctionnalités en anglais.</p>
+<p>Manque de bol, il était fan des tournures à rallonge, ce qui a donné des phrases très longues, avec du vocabulaire très technique, d'une complexité pas toujours justifiée.</p>
+<p>On ne s'est rendu compte du problème que pendant ses vacances, lorsqu'on a du résoudre un souci sur ces fameuses nouvelles fonctionnalités, comme il l'avait rédigé seul, certains choix de terme n'était connu que de lui, on a donc eu beaucoup de mal à comprendre ce qu'il voulait dire.</p>
+</blockquote>
 
 Le problème que montre cet exemple, outre un souci de process, est que la documentation c'est surtout de la littérature. 
 
@@ -136,6 +134,6 @@ Corollaire : Pour les étudiants qui partent en Erasmus, pitié ne restez pas en
 
 Votre niveau d'anglais ne doit pas être une limite, si le développement vous tente, lancez-vous, vous trouverez toujours des gens pour vous aider à progresser !
 
-Si vous avez des questions ou des remarques n'hésitez pas à me contacter sur [Twitter](https://twitter.com/YoanSmit){:target="_blank"} ou [LinkedIn](https://www.linkedin.com/in/yoan-smit/){:target="_blank"}, je me ferai un plaisir de vous répondre.
+Si vous avez des questions ou des remarques n'hésitez pas à me contacter sur [Twitter](https://twitter.com/YoanSmit) ou [LinkedIn](https://www.linkedin.com/in/yoan-smit/), je me ferai un plaisir de vous répondre.
 
 Cheers.

@@ -154,3 +154,16 @@ code {
     font-size: 87.5%;
     word-wrap: break-word;
 }
+
+blockquote {
+    color: #808080;
+    font-style: italic;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
