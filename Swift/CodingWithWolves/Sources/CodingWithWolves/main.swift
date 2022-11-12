@@ -28,7 +28,7 @@ let indentation: Indentation.Kind? = nil
 let additionalSteps: [PublishingStep<CodingWithWolves>] = []
 let rssFeedSections: Set<CodingWithWolves.SectionID> = Set(CodingWithWolves.SectionID.allCases)
 let rssFeedConfig: RSSFeedConfiguration? = .default
-let deploymentMethod: DeploymentMethod<CodingWithWolves>? = nil
+let deploymentMethod: DeploymentMethod<CodingWithWolves>? = .gitHub("Naxyoh/naxyoh.github.io.git", useSSH: true)
 
 try CodingWithWolves()
     .publish(
