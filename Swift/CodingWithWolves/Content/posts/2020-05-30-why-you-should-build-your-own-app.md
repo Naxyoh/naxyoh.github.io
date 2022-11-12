@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Why you should build your own app
 subtitle: ... and then let it die
 preview: When you start coding without a frame usually what you do is messy, I mean no product road map, your user interface looks like Windows 95 and you might even be coding without any versioning tool because well, you don't give a damn about all this.
@@ -69,7 +68,5 @@ Remember that I made the assumption that you are doing this while working, if in
 You can just leave it on the AppStore to die eventually or you can totally remove it from the store, maybe open-source it ? Personally I prefer removing it from the AppStore entirely, you don't want a buggy app, or one that is not up to date, related to your name.
 
 The idea behind it is keeping the value of what you learned without the burden of maintainance. By open-sourcing it you can still access it, link to it on your LinkedIn and improve your personal branding, given the code you produced is not something you are ashamed of.
-
-What is your opinion about building your own app ? How do you balance your personnal work and your professional one ? Feel free to contact me on Twitter.
 
 Cheers.
