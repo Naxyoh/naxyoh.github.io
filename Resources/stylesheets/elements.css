@@ -1,0 +1,169 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 1.125rem;
+  color: #404040;
+  position: relative;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+nav {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+      padding: 1rem;
+    }
+}
+
+p {
+  line-height: 1.5;
+  margin: 1.875rem 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+    }
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.25rem;
+}
+
+hr.small {
+    max-width: 6.25rem;
+    margin: 1rem auto;
+    border-width: 0.25rem;
+    border-color: inherit;
+    border-radius: 0.1875rem;
+}
+
+hr.gray {
+    border-color: #808080;
+}
+
+article hr {
+    max-width: 25%;
+    border-width: 0.25rem;
+    border-radius: 0.1875rem;
+    border-color: #808080;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+article.post-preview {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+article.post-preview:last-child {
+    border-bottom: 0;
+}
+
+div.page-content {
+    flex: 1 0 auto;
+    margin: 4.125rem auto 3.125rem;
+    padding: 0 6.666667%;
+    max-width: 970px;
+    width: 100%
+}
+
+@media screen and (max-width: 425px) {
+    div.page-content {
+        margin: 3rem auto 1rem;
+    }
+}
+
+footer {
+    padding: 3.125rem 0;
+    border-top: 1px #EAEAEA solid;
+    font-size: 0.875rem;
+    background-color: #EAEAEA;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        padding: 2rem 0;
+    }
+}
+
+code {
+    padding: 0.125rem 0.25rem;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 0.25rem;
+    font-size: 87.5%;
+    word-wrap: break-word;
+}
+
+blockquote {
+    color: #808080;
+    font-style: italic;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
