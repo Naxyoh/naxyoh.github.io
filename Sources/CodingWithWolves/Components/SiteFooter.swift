@@ -33,7 +33,7 @@ struct SiteFooter: Component {
                     .class("footer__copyright")
                     .class("footer-text")
                 Paragraph {
-                    Text("Fait avec ♥ grâce à ")
+                    Text("Fait avec amour grâce à ")
                     Link(
                         "Publish",
                         url: "https://github.com/johnsundell/publish"
