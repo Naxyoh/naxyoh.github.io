@@ -31,7 +31,12 @@ let indentation: Indentation.Kind? = nil
 let additionalSteps: [PublishingStep<CodingWithWolves>] = []
 let rssFeedSections: Set<CodingWithWolves.SectionID> = Set(CodingWithWolves.SectionID.allCases)
 let rssFeedConfig: RSSFeedConfiguration? = .default
-let deploymentMethod: DeploymentMethod<CodingWithWolves>? = .gitHub("Naxyoh/naxyoh.github.io", useSSH: true)
+
+// Changed git@github.com to git@me.github.com because of multiple ssh keys (see ~/.ssh/config)
+let prefix = "git@me.github.com:"
+let repository = "Naxyoh/naxyoh.github.io"
+let branch = "master"
+let deploymentMethod: DeploymentMethod<CodingWithWolves>? = .git("\(prefix)\(repository).git", branch: branch)
 
 try CodingWithWolves()
     .publish(
