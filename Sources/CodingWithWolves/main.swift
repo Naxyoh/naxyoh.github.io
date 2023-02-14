@@ -25,7 +25,7 @@ struct CodingWithWolves: Website {
 
 let plugins: [Plugin<CodingWithWolves>] = [
     .addCNAME(),
-    .addHTAccess(),
+//    .addHTAccess(),
 ]
 let indentation: Indentation.Kind? = nil
 let additionalSteps: [PublishingStep<CodingWithWolves>] = []
