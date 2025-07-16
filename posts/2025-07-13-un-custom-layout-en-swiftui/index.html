@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/><meta property="og:site_name" content="CodingWithWolves"/><link rel="canonical" href="https://codingwithwolves.com/posts/2025-07-13-un-custom-layout-en-swiftui"/><meta name="twitter:url" content="https://codingwithwolves.com/posts/2025-07-13-un-custom-layout-en-swiftui"/><meta property="og:url" content="https://codingwithwolves.com/posts/2025-07-13-un-custom-layout-en-swiftui"/><title>Réaliser un Layout custom en SwiftUI | CodingWithWolves</title><meta name="twitter:title" content="Réaliser un Layout custom en SwiftUI | CodingWithWolves"/><meta property="og:title" content="Réaliser un Layout custom en SwiftUI | CodingWithWolves"/><meta name="description" content="Le blog de Yoan Smit où on parle pratique de code, de Swift et de la tech en général."/><meta name="twitter:description" content="Le blog de Yoan Smit où on parle pratique de code, de Swift et de la tech en général."/><meta property="og:description" content="Le blog de Yoan Smit où on parle pratique de code, de Swift et de la tech en général."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/stylesheets/code.css" type="text/css"/><link rel="stylesheet" href="/stylesheets/components.css" type="text/css"/><link rel="stylesheet" href="/stylesheets/resets.css" type="text/css"/><link rel="stylesheet" href="/stylesheets/elements.css" type="text/css"/><link rel="stylesheet" href="/stylesheets/modifiers.css" type="text/css"/><link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css" type="text/css"/><link rel="stylesheet" href="/assets/fontawesome/css/brands.min.css" type="text/css"/><link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css" type="text/css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" type="text/css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"/><link rel="manifest" href="/favicon/site.webmanifest"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to CodingWithWolves"/></head><body><nav class="site-header"><div class="site-header__container"><span class="site-header__anchor vertical-center"><a href="/" class="site-header__link">C2W</a></span><span class="site-header__navigation-item vertical-center"><a href="/about" class="site-header__link">YOAN SMIT</a></span></div><div class="site-header__avatar-container horizontal-center"><img src="/images/avatar.png" alt="Avatar de Coding with Wolves" class="site-header__avatar"/></div></nav><div class="page-content"><article role="main" class="post-details__container"><div><h1 class="post-details__title">Réaliser un Layout custom en SwiftUI</h1><h2 class="post-details__subtitle">... un guide simple pour créer un layout flexible et réutilisable en SwiftUI</h2><span class="post-details__metadata">Posté le 13 juillet 2025</span><span class="post-details__metadata"> · </span><span class="post-details__metadata">9 minutes</span></div><div><h1>Un custom layout en SwiftUI</h1><p>Les HStack et les VStack sont une des pierres angulaires de tout design en SwiftUI.</p><p>Mais quand les designers s'emballent, on a besoin de plus.</p><p>Dans ces moments-là, il est tentant de partir sur un patchwork qui mélange les deux mais qui finit souvent en plat de spaghettis.</p><p>Pourtant Apple a pensé à tout.</p><p>Est-ce que tu savais que derrière ces composants se cache le protocole <code>Layout</code> que l’on peut implémenter nous-même pour donner vie à n’importe quel design ?</p><p>Dans cet article, je te montre comment créer un <code>FlowLayout</code> semblable à ce qu’on pourrait faire avec une <code>CollectionView</code> mais en 100% SwiftUI.</p><p>Si tu ne vois pas à quoi ça correspond, imagine un nuage de mots-clés ou bien des tags à faire tenir à la suite comme dans Mail.</p><h2>Pourquoi se pencher sur le sujet</h2><p>SwiftUI nous fournit déjà pas mal de composants permettant de structurer nos layout. Entre les HStack, VStack, Grid, leurs versions Lazy et autres, on a de quoi faire.</p><p>Mais parfois pour réaliser certains designs, ils ne suffisent pas. Prenez l'exemple d'un design où les éléments sont placés circulairement autour d'un point, un peu comme les graduations d'une horloge ou encore placés sur une sinusoïde (on va pas se mentir, certains designers ont l'imagination débordante).</p><p>Dans ces moments-là, même en combinant les éléments natifs dans tous les sens, c'est pas évident à implémenter ou alors le code ressemble vite à pas grand chose.</p><p>C'est pour des cas comme ça que Apple a mis à notre disposition le protocol <a href="https://developer.apple.com/documentation/swiftui/layout">Layout</a>.</p><p>Ce protocol a deux méthodes obligatoires que l'on doit implémenter.</p><ul><li><code>sizeThatFits(proposal:subviews:cache:)</code> :</li></ul><p>Cette méthode est responsable de déterminer la taille de notre container. Elle est nécessaire pour dire à son parent la taille dont il a besoin.</p><ul><li><code>placeSubviews(in:proposal:subviews:cache:)</code> :</li></ul><p>Cette méthode est responsable de déterminer la position de chaque subview.</p><p>Il est important de noter qu'il est possible que les subviews soient placés en dehors du container si les calculs dans l'une de ces deux méthodes sont faux.</p><p>Pas besoin de se coltiner toute la doc Apple : voyons comment l’utiliser concrètement.</p><h2>Comment ça s'implémente</h2><p>On commence par déclarer notre layout custom :</p><pre><code><span class="keyword">import</span> SwiftUI
+
+<span class="keyword">struct</span> FlowLayout: <span class="type">Layout</span> {
+    ...
+}
+</code></pre><p>Et on ajoute les méthodes obligatoires pour que le compilo arrête de nous hurler dessus :</p><pre><code><span class="keyword">func</span> sizeThatFits(proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) -&gt; <span class="type">CGSize</span> {
+    <span class="comment">// A remplir</span>
+    <span class="keyword">return</span> .<span class="dotAccess">zero</span>
+}
+    
+<span class="keyword">func</span> placeSubviews(in bounds: <span class="type">CGRect</span>, proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) {
+    <span class="comment">// A remplir</span>
+}
+</code></pre><p>Et pour finir le setup, tu peux ajouter cette preview à la fin du fichier pour visualiser l'avancement :</p><pre><code>#Preview {
+    <span class="keyword">let</span> backgrounds: [<span class="type">Color</span>] = [.<span class="dotAccess">blue</span>, .<span class="dotAccess">red</span>, .<span class="dotAccess">green</span>]
+    <span class="type">FlowLayout</span> {
+        <span class="type">ForEach</span>(<span class="number">0</span>..&lt;<span class="number">20</span>) { index <span class="keyword">in
+            let</span> str = <span class="type">Array</span>(repeating: <span class="type">String</span>(index), count: index + <span class="number">1</span>).<span class="call">joined</span>()
+            <span class="type">Text</span>(str)
+                .<span class="call">background</span>(backgrounds.<span class="call">randomElement</span>()!)
+        }
+    }
+    .<span class="call">background</span>(.<span class="dotAccess">gray</span>)
+    .<span class="call">padding</span>()
+}
+</code></pre><blockquote><p>Si tu te demandes ce que cette preview va afficher, c'est simplement l'index courant plusieurs fois. Les backgrounds eux nous serviront à vérifier nos changements. Pour mieux te rendre compte, tu peux remplacer le <code>FlowLayout</code> par une <code>VStack</code>.</p></blockquote><p>À ce stade, comme tu peux le voir, ça ressemble pas encore à grand chose ...</p><h3>Version basique du layout</h3><p>Dans un premier temps on va réaliser une version avec les éléments alignés à gauche, sans espacement entre les éléments, le minimum syndical quoi.</p><h4>Calcul de la taille du layout</h4><p>L'objectif est de calculer la taille de notre layout en se basant sur la taille fournie par le parent et les tailles des différentes subviews.</p><p>Voici ce que ça donne :</p><pre><code><span class="keyword">func</span> sizeThatFits(proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) -&gt; <span class="type">CGSize</span> {
+    <span class="keyword">let</span> safeProposal = proposal.<span class="call">replacingUnspecifiedDimensions</span>() <span class="comment">// 1</span>
+    
+    <span class="keyword">let</span> subviewSizes = subviews
+        .<span class="call">map</span> { $0.<span class="call">sizeThatFits</span>(.<span class="keyword">init</span>(width: safeProposal.<span class="property">width</span>, height: .<span class="dotAccess">infinity</span>)) } <span class="comment">// 2</span>
+    
+    <span class="keyword">var</span> containerHeight = <span class="type">CGFloat</span>.<span class="property">zero</span>
+    <span class="keyword">var</span> linesMaxWidth = <span class="type">CGFloat</span>.<span class="property">zero</span>
+    
+    <span class="keyword">var</span> currentLineSize = <span class="type">CGSize</span>.<span class="property">zero</span> <span class="comment">// 3</span>
+    
+    subviewSizes.<span class="call">forEach</span> { size <span class="keyword">in</span> <span class="comment">// 4</span>
+        <span class="keyword">let</span> lineNextWidth = currentLineSize.<span class="property">width</span> + size.<span class="property">width</span>
+        <span class="keyword">let</span> isSubviewOverflowing = lineNextWidth &gt; safeProposal.<span class="property">width</span>
+        
+        <span class="keyword">if</span> isSubviewOverflowing {
+            linesMaxWidth = <span class="call">max</span>(linesMaxWidth, currentLineSize.<span class="property">width</span>)
+            containerHeight += currentLineSize.<span class="property">height</span>
+            
+            currentLineSize = .<span class="dotAccess">zero</span>
+        }
+        
+        currentLineSize.<span class="property">width</span> = currentLineSize.<span class="property">width</span> + size.<span class="property">width</span>
+        currentLineSize.<span class="property">height</span> = <span class="call">max</span>(currentLineSize.<span class="property">height</span>, size.<span class="property">height</span>)
+    }
+
+    containerHeight += currentLineSize.<span class="property">height</span> <span class="comment">// 5</span>
+    
+    <span class="keyword">return</span> <span class="type">CGSize</span>(width: linesMaxWidth, height: containerHeight) <span class="comment">// 6</span>
+}
+</code></pre><p>Un peu d'explication :</p><ol><li>Il est possible que la taille proposée par le parent contienne des <code>infinity</code>, pour palier à ça <code>replacingUnspecifiedDimensions()</code> les remplace par des valeurs finies.</li></ol><ol start="2"><li>On convertit les subviews en leurs dimensions en spécifiant que la width maximale est celle du parent (pour éviter que notre subview soit plus large) et en ne spécifiant pas de hauteur maximale.</li></ol><ol start="3"><li>On initialise les différentes variables qui seront utilisées ensuite pour faire nos calculs.</li></ol><ol start="4"><li>C'est dans cette boucle que les calculs se font. On commence par vérifier que l'élément courant a assez d'espace pour être ajouté sur la ligne actuelle, si ce n'est pas le cas, on ajoute une ligne et on reset le size de la ligne courante.</li></ol><ol start="5"><li>On oublie pas la dernière ligne, qui n'a pas été ajoutée car elle n'a pas déclenché d'overflow.</li></ol><ol start="6"><li>Enfin on renvoie la taille de notre container : la width de la plus longue ligne et la height cumulée.</li></ol><p>La preview devrait donner un truc du style :</p><div class="screenshot">
+<img src="/images/custom-layout-size.png" atl="Résultat de l'étape de calcul de la taille du layout"/>
+</div><h4>Placement des subviews</h4><p>Maintenant que notre layout a une taille qui ressemble à quelque chose, finalisons notre version basique.</p><p>L'implémentation donne un truc de ce style :</p><pre><code><span class="keyword">func</span> placeSubviews(in bounds: <span class="type">CGRect</span>, proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) {
+    <span class="keyword">let</span> safeProposal = proposal.<span class="call">replacingUnspecifiedDimensions</span>() <span class="comment">// 1</span>
+    
+    <span class="keyword">var</span> currentSubviewOffset = bounds.<span class="property">origin</span> <span class="comment">// 2</span>
+    
+    subviews.<span class="call">forEach</span> { subview <span class="keyword">in
+        let</span> subviewSize = subview.<span class="call">sizeThatFits</span>(.<span class="keyword">init</span>(width: safeProposal.<span class="property">width</span>, height: .<span class="dotAccess">infinity</span>)
+        ) <span class="comment">// 3</span>
+        
+        <span class="keyword">let</span> nextSubviewXOffset = currentSubviewOffset.<span class="property">x</span> + subviewSize.<span class="property">width</span>
+        <span class="keyword">let</span> isSubviewOverflowing = nextSubviewXOffset &gt; safeProposal.<span class="property">width</span>
+        
+        <span class="keyword">if</span> isSubviewOverflowing {
+            currentSubviewOffset.<span class="property">x</span> = bounds.<span class="property">minX</span>
+            currentSubviewOffset.<span class="property">y</span> += subviewSize.<span class="property">height</span>
+        } <span class="comment">// 4</span>
+        
+        subview.<span class="call">place</span>(
+            at: currentSubviewOffset,
+            proposal: .<span class="keyword">init</span>(
+                width: subviewSize.<span class="property">width</span>,
+                height: subviewSize.<span class="property">height</span>.<span class="property">isFinite</span> ? subviewSize.<span class="property">height</span> : <span class="keyword">nil</span>
+            )
+        ) <span class="comment">// 5</span>
+        
+        currentSubviewOffset.<span class="property">x</span> += subviewSize.<span class="property">width</span> <span class="comment">// 6</span>
+    }
+}
+</code></pre><p>C'est parti pour les explications :</p><ol><li>Comme tout à l'heure, on s'assure que la taille fournie par le parent ne contient pas de valeurs foireuses.</li></ol><ol start="2"><li>On initialise notre offset avec l'origine du rectangle fournit, surtout ne pas assumer que le parent commence à <code>.zero</code>.</li></ol><ol start="3"><li>On récupère les dimensions de notre subview.</li></ol><ol start="4"><li>Si la subview ne rentre pas dans la ligne actuelle, on ajoute une ligne en réinitilisant l'offset horizontalement et en ajoutant la height de notre subview.</li></ol><ol start="5"><li>La partie la plus importante. Cette méthode vient placer la subview selon les paramètres passés. Ici on lui donne notre offset ainsi qu'une taille, la width déterminée plus haut et concernant la height, sachant qu'on ne lui en a pas fixée avant, on vérifie qu'elle est finie, sinon on précise <code>nil</code>.</li></ol><ol start="6"><li>Et enfin on décale l'offset horizontalement pour la prochaine subview.</li></ol><p>Tu devrais avoir un truc qui ressemble à ça au final :</p><div class="screenshot">
+<img src="/images/custom-layout-placement.png" alt="Résultat de l'étape de placement des subviews du layout">
+</div><h4>C'est fini ?</h4><p>Minute papillon, y'a pas mal de choses à revoir dans notre copie :</p><ul><li>On ne gère actuellement qu'un alignement à gauche, et si on voulait gérer un alignement à droite ou au centre ?</li><li>Idem pour l'alignement vertical de chaque ligne si les subviews ont des hauteurs différentes, elles sont alignées en haut.</li><li>Pas moyen de spécifier des espaces entre les éléments ni les lignes.</li><li>Les implémentations de nos deux méthodes se ressemblent beaucoup et une modification d'un côté entraîne une modification de l'autre.</li></ul><p>Réglons ces problèmes, du plus embêtant au plus cosmétique.</p><h3>Mutualisiation des calculs</h3><p>Est-ce le plus critique ? Pas forcément.</p><p>Est-ce que ça va nous faciliter la vie lors de nos prochaines modifications ? Assurément.</p><p>C'est pour ça que c'est le problème à corriger en premier selon moi.</p><p>Comme tu as dû sûrement t'en rendre compte, les deux méthodes de notre layout se ressemblent énormément et c'est normal, après tout dans les deux cas on se base sur la taille de nos subviews pour ensuite, dans un cas, calculer la taille globale, dans l'autre, l'offset des subviews.</p><p>Voyons comment on peut mutualiser tout ça :</p><pre><code><span class="keyword">func</span> layout(
+    proposal: <span class="type">ProposedViewSize</span>,
+    subviews: <span class="type">Subviews</span>
+) -&gt; (containerSize: <span class="type">CGSize</span>, offsets: [<span class="type">CGPoint</span>]) {
+    <span class="keyword">let</span> safeProposal = proposal.<span class="call">replacingUnspecifiedDimensions</span>() <span class="comment">// 1
+        
+    // 2</span>
+    <span class="keyword">var</span> offsets = [<span class="type">CGPoint</span>]()
+    <span class="keyword">var</span> currentSubviewOffset = <span class="type">CGPoint</span>.<span class="property">zero</span>
+        
+    <span class="keyword">var</span> currentLineHeight = <span class="type">CGFloat</span>.<span class="property">zero</span>
+    <span class="keyword">var</span> containerSize = <span class="type">CGSize</span>.<span class="property">zero</span>
+        
+    subviews.<span class="call">forEach</span> { subview <span class="keyword">in
+        let</span> subviewSize = subview.<span class="call">sizeThatFits</span>(.<span class="keyword">init</span>(width: safeProposal.<span class="property">width</span>, height: .<span class="dotAccess">infinity</span>)
+        ) <span class="comment">// 3</span>
+            
+        <span class="keyword">let</span> nextSubviewXOffset = currentSubviewOffset.<span class="property">x</span> + subviewSize.<span class="property">width</span>
+        <span class="keyword">let</span> isSubviewOverflowing = nextSubviewXOffset &gt; safeProposal.<span class="property">width</span>
+            
+        <span class="comment">// 4</span>
+        <span class="keyword">if</span> isSubviewOverflowing {
+            containerSize.<span class="property">height</span> += currentLineHeight
+            currentSubviewOffset.<span class="property">y</span> += currentLineHeight
+
+            currentLineHeight = .<span class="dotAccess">zero</span>    
+            currentSubviewOffset.<span class="property">x</span> = .<span class="dotAccess">zero</span>
+        }
+            
+        <span class="comment">// 5</span>
+        offsets.<span class="call">append</span>(currentSubviewOffset)
+        currentSubviewOffset.<span class="property">x</span> += subviewSize.<span class="property">width</span>
+        currentLineHeight = <span class="call">max</span>(currentLineHeight, subviewSize.<span class="property">height</span>)
+            
+        containerSize.<span class="property">width</span> = <span class="call">max</span>(containerSize.<span class="property">width</span>, currentSubviewOffset.<span class="property">x</span>)
+    }
+        
+    containerSize.<span class="property">height</span> += currentLineHeight <span class="comment">// 6</span>
+        
+    <span class="keyword">return</span> (containerSize: containerSize, offsets: offsets)
+}
+</code></pre><p>On commence par créer une nouvelle méthode appelée <code>layout</code> (parce que j'ai pas trouvé de meilleur nom ...)</p><p>J'ai plus ou moins fait un patchwork des deux méthodes :</p><ol><li>Comme d'habitude, on récupère une proposal sans valeur foireuse.</li></ol><ol start="2"><li>On crée les différentes variables dont on va avoir besoin pour la suite.</li></ol><ol start="3"><li>On récupère la taille de la subview selon notre proposition.</li></ol><ol start="4"><li>En cas d'overflow, on augmente la hauteur du container et on décale l'offset de la taille de la ligne actuelle. Ensuite on reset l'offset selon X et la hauteur de la ligne.</li></ol><ol start="5"><li>On ajoute l'offset actuel au tableau, qui correspond à l'origine de notre subview, on décale l'offset selon X, on trouve la hauteur max de la ligne et on agrandit la largeur du container si besoin.</li></ol><ol start="6"><li>Enfin on oublie pas d'ajouter la hauteur de la dernière ligne.</li></ol><p>On peut maintenant remplacer l'implémentation pour le calcul de la taille de notre layout :</p><pre><code><span class="keyword">func</span> sizeThatFits(proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) -&gt; <span class="type">CGSize</span> {
+    <span class="call">layout</span>(proposal: proposal, subviews: subviews).<span class="property">containerSize</span>
+}
+</code></pre><p>Le gain est assez évident ici.</p><p>Et on fait pareil pour l'implémentation du placement des subviews :</p><pre><code><span class="keyword">func</span> placeSubviews(in bounds: <span class="type">CGRect</span>, proposal: <span class="type">ProposedViewSize</span>, subviews: <span class="type">Subviews</span>, cache: <span class="keyword">inout</span> ()) {
+    <span class="keyword">let</span> safeProposal = proposal.<span class="call">replacingUnspecifiedDimensions</span>()
+    <span class="keyword">let</span> offsets = <span class="call">layout</span>(proposal: proposal, subviews: subviews).<span class="property">offsets</span>
+    
+    <span class="call">zip</span>(subviews, offsets).<span class="call">forEach</span> { subview, offset <span class="keyword">in
+        let</span> subviewSize = subview.<span class="call">sizeThatFits</span>(.<span class="keyword">init</span>(width: safeProposal.<span class="property">width</span>, height: .<span class="dotAccess">infinity</span>))
+        
+        subview.<span class="call">place</span>(
+            at: .<span class="keyword">init</span>(
+                x: offset.<span class="property">x</span> + bounds.<span class="property">minX</span>,
+                y: offset.<span class="property">y</span> + bounds.<span class="property">minY</span>
+            ),
+            proposal: .<span class="keyword">init</span>(
+                width: subviewSize.<span class="property">width</span>,
+                height: subviewSize.<span class="property">height</span>.<span class="property">isFinite</span> ? subviewSize.<span class="property">height</span> : <span class="keyword">nil</span>
+            )
+        )
+    }
+}
+</code></pre><p>Ici la différence notable est l'utilisation du <code>zip</code> qui permet de regrouper une subview avec son offset.</p><p>Et TADA, plus besoin de penser à modifier les deux méthodes, ce qui ne faisait pas vraiment de sens quand on y réfléchit puisque les deux sont étroitement liées.</p><hr><p>On a un layout qui fonctionne. Mais il est loin d’être souple ou complet.</p><p>La suite ? Le rendre plus flexible, plus aligné, plus... SwiftUI.</p><p>On verra ça ensemble dans le prochain article.</p><p>En attendant si tu as des questions ou des remarques, n'hésite pas à me contacter sur <a href="https://www.linkedin.com/in/yoan-smit/">LinkedIn</a>, je me ferai un plaisir de te répondre.</p><p>Cheers.</p></div><div class="post-details__footer"><a href="/posts/2025-04-21-pourquoi-les-enums-sont-a-eviter" class="post-details__footer__next">ARTICLE PRÉCÉDENT →</a></div></article></div><footer><div class="footer__container"><ul><li><a href="/feed.xml" title="RSS" target="_blank"><span aria-hidden="true" class="rounded background-gray link-container"><i class="fa fa-rss fa-inverse"></i></span></a></li><li><a href="https://github.com/Naxyoh" title="GitHub" target="_blank"><span aria-hidden="true" class="rounded background-gray link-container"><i class="fab fa-github fa-inverse"></i></span></a></li><li><a href="https://linkedin.com/in/yoan-smit" title="LinkedIn" target="_blank"><span aria-hidden="true" class="rounded background-gray link-container"><i class="fab fa-linkedin fa-inverse"></i></span></a></li></ul><span class="footer__copyright footer-text">Yoan Smit &nbsp;•&nbsp; © 2022 &nbsp;•&nbsp; <a href="/" class="footer-link">CodingWithWolves.com</a></span><p class="footer__license footer-text">Fait avec amour grâce à <a href="https://github.com/johnsundell/publish" target="_blank" class="footer-link">Publish</a></p><p class="footer__license footer-text">Ce blog est couvert selon les termes de la <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" class="footer-link">Licence Creative Commons Attribution 4.0 International</a></p></div></footer></body></html>
